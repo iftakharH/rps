@@ -13,10 +13,12 @@ const genCompChoice = () => {
     return options[randIdx];
 };
 
+
 const drawGame = () => {
     msg.innerText = "Game was a Draw. Play again.";
     msg.style.backgroundColor = "yellow";
 };
+
 
 const showWinner = (userWin, userChoice, compChoice) => {
     if (userWin) {
@@ -31,6 +33,8 @@ const showWinner = (userWin, userChoice, compChoice) => {
         msg.style.backgroundColor = "red";
     }   
 };
+
+
 
 const playGame = (userChoice) => {
     //Generate computer choice
@@ -54,6 +58,8 @@ const playGame = (userChoice) => {
     showWinner(userWin, userChoice, compChoice);
     }
 };
+
+
 
 choices.forEach((choice) => {
     choice.addEventListener("click", () => {
